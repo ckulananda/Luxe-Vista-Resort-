@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">DB_LuxeVista_Resort</string>
+    <string name="choose_image">Choose Image</string>
+    <string name="finish">Finish</string>
+    <string name="enter_address">Enter Address</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_firstname">First Name</string>
+    <string name="hint_lastname">Last Name</string>
+    <string name="hint_contact">Contact Number</string>
+    <string name="hint_address">Address</string>
+    <string name="register">Register</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="retype_password">Retype Password</string>
+    <string name="show">Show</string>
+    <string name="next">Next</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="address">Address</string>
+    <string name="customer_dashboard">Customer Dashboard</string>
+    <string name="welcome_customer">Welcome, Customer</string>
+    <string name="view_packages">View Packages</string>
+    <string name="book_resort">Book Resort</string>
+    <string name="logout">Logout</string>
+    <string name="_2025_luxevista_resort">© 2025 LuxeVista Resort</string>
+    <string name="welcome">Welcome!</string>
+    <string name="MY_Bookings" />
+
+
+</resources>

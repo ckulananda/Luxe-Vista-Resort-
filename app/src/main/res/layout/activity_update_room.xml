@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Room Image -->
+        <ImageView
+            android:id="@+id/imgRoom"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_marginBottom="16dp"
+            android:background="@color/light_gray"/>
+
+        <Button
+            android:id="@+id/btnSelectImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Image"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Room Name -->
+        <EditText
+            android:id="@+id/etRoomName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/et_background"
+            android:hint="Room Name"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+        <!-- Room Category -->
+        <EditText
+            android:id="@+id/etRoomCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/et_background"
+            android:hint="Category"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+        <!-- Room Description -->
+        <EditText
+            android:id="@+id/etRoomDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:padding="10dp"
+            android:background="@drawable/et_background"
+            android:layout_marginBottom="16dp"
+            android:inputType="textMultiLine"
+            android:minLines="3"/>
+
+        <!-- Room Price -->
+        <EditText
+            android:id="@+id/etRoomPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/et_background"
+            android:hint="Price"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+        <!-- Room Status -->
+        <Spinner
+            android:id="@+id/spRoomStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:minHeight="48dp" />
+
+        <!-- Update Button -->
+        <Button
+            android:id="@+id/btnUpdateRoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Room"
+            android:background="@color/luxury_navy"
+            android:textColor="@android:color/white"
+            android:padding="12dp"/>
+    </LinearLayout>
+</ScrollView>

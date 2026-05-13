@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DB_LuxeVista_Resort"
+        tools:targetApi="31">
+        <activity
+            android:name=".ManageUsersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyReservationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddReservationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".com.example.db_luxevista_resort.AboutUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewBookingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".com.example.db_luxevista_resort.BookingSummaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddBookingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".com.example.db_luxevista_resort.ViewBookingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateRoomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminManageRoomsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewRoomsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BookingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Rooms"
+            android:exported="false" />
+        <activity
+            android:name=".ConfirmBookingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BookRoomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddRoomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Customer"
+            android:exported="false" />
+        <activity
+            android:name=".Admin"
+            android:exported="false" />
+        <activity
+            android:name=".RegFinishActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Reg3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Reg2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Reg1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Screen_Splash_luxe_Vista"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

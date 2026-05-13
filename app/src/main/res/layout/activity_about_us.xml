@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/aboutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AboutUsActivity">
+
+    <!-- HEADER (Reuse same style as MainActivity) -->
+    <LinearLayout
+        android:id="@+id/Topsection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/luxury_navy"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/navPackages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:text="Packages"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/navResort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:text="Our Resort"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/navSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:text="Sign In"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/navAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Us"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- SCROLLABLE CONTENT -->
+    <ScrollView
+        android:id="@+id/scrollContent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/Topsection"
+        app:layout_constraintBottom_toTopOf="@id/Bottomsection"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- App Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About LuxeVista Resort"
+                android:textColor="@color/luxury_gold"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <!-- Paragraph Text -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Located in the heart of Matara, Sri Lanka, LuxeVista Resort offers the ultimate beachfront luxury experience. Opened in 2024, we provide world-class accommodations, fine dining, and exclusive services to our guests."
+                android:textColor="@color/luxury_navy"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"/>
+
+            <!-- Vision -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Our Vision"
+                android:textColor="@color/luxury_gold"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To be the most sought-after beachfront resort in Sri Lanka, offering unmatched guest experiences."
+                android:textColor="@color/luxury_navy"
+                android:layout_marginTop="4dp"
+                android:textSize="16sp"/>
+
+            <!-- Mission -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Our Mission"
+                android:textColor="@color/luxury_gold"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To provide unparalleled service and luxury accommodations, combining comfort with elegance."
+                android:textColor="@color/luxury_navy"
+                android:layout_marginTop="4dp"
+                android:textSize="16sp"/>
+
+            <!-- Photo Gallery (4 images stacked) -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/room1"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/rounded_corners"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Luxurious ocean-view bedroom with modern amenities."
+                android:textColor="@color/luxury_navy"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="12dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/room2"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_corners"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Spacious suite with private balcony and sea view."
+                android:textColor="@color/luxury_navy"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="12dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/seafood"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_corners"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exquisite dining experience with fresh seafood specialties."
+                android:textColor="@color/luxury_navy"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="12dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/spa1"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_corners"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Relaxing spa facilities for a rejuvenating wellness experience."
+                android:textColor="@color/luxury_navy"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="12dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- FOOTER (Reuse MainActivity style) -->
+    <LinearLayout
+        android:id="@+id/Bottomsection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/luxury_navy"
+        android:padding="12dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="© 2025 LuxeVista Resort"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Matara, Sri Lanka | Contact: +94 412255511"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

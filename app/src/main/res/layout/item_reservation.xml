@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/card_bg"
+    android:padding="16dp"
+    android:layout_margin="10dp"
+    android:elevation="6dp">
+
+    <!-- Reservation ID -->
+    <TextView
+        android:id="@+id/tvResId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reservation #123"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="6dp"/>
+
+    <!-- Type -->
+    <TextView
+        android:id="@+id/tvResType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type: Deluxe Room"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- Date -->
+    <TextView
+        android:id="@+id/tvResDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date: 2025-09-24"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="6dp"/>
+
+    <!-- Status -->
+    <TextView
+        android:id="@+id/tvResStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: Pending"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/purple_500"
+        android:layout_marginBottom="6dp"/>
+
+    <!-- Admin-only Status Update -->
+    <Spinner
+        android:id="@+id/spStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:spinnerMode="dropdown"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_marginTop="8dp" />
+</LinearLayout>

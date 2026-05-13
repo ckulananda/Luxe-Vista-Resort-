@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="bookingDate" type="id" />
+    <item name="pickDateBtn" type="id" />
+    <item name="confirmBtn" type="id" />
+    <item name="imgRoom" type="id" />
+    <item name="txtRoomName" type="id" />
+    <item name="txtRoomCategory" type="id" />
+    <item name="txtRoomPrice" type="id" />
+    <item name="txtRoomDescription" type="id" />
+    <item name="btnUpdateRoom" type="id" />
+    <item name="btnDeleteRoom" type="id" />
+    <item name="etServiceName" type="id" />
+    <item name="etServicePrice" type="id" />
+    <item name="etServiceDuration" type="id" />
+    <item name="btnAddService" type="id" />
+    <item name="tvServiceName" type="id" />
+    <item name="tvServicePrice" type="id" />
+    <item name="tvServiceDuration" type="id" />
+    <item name="tvServiceDescription" type="id" />
+    <item name="tvServiceTime" type="id" />
+    <item name="btnEditService" type="id" />
+    <item name="btnDeleteService" type="id" />
+</resources>
